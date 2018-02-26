@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -20,15 +21,10 @@ public class MainActivity extends AppCompatActivity {
             {"sin x + cos x","0","1","sin x * cos x * cos x * sin x"},
     };
     */
-    //All the radioGroups I have
-    RadioGroup rg[] = {
-            findViewById(R.id.radioGroup1),
-            findViewById(R.id.radioGroup2),
-            findViewById(R.id.radioGroup3),
-            findViewById(R.id.radioGroup4),
-            findViewById(R.id.radioGroup5),
-            findViewById(R.id.radioGroup6)};
+    RadioGroup[] rg = new RadioGroup[6];
     RadioButton rb;
+
+    String name;
     //public int correctAnswers[]={1,1,3,2,4,3};  //Maybe I use it and anyways it's good for me to see the right answers
     public boolean s7 = false; // The boolean for the check box at the 7th question
     public int score = 0; //keep track of the score
@@ -37,89 +33,87 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        rg[0] = findViewById(R.id.radioGroup1);
+        rg[1] = findViewById(R.id.radioGroup2);
+        rg[2] = findViewById(R.id.radioGroup3);
+        rg[3] = findViewById(R.id.radioGroup4);
+        rg[4] = findViewById(R.id.radioGroup5);
+        rg[5] = findViewById(R.id.radioGroup6);
+
+        EditText nameET = findViewById(R.id.nameEdit);
+        name = nameET.getText().toString();
     }
 
     public void question7clicked(View view) {
-        if(((CheckBox) view).isChecked()){
+        if (((CheckBox) view).isChecked()) {
             ((CheckBox) view).setText("So you say it's true");
-            s7=true;
+            s7 = true;
             score++;
-        }
-        else{
+        } else {
             ((CheckBox) view).setText("So you say it's false");
-            s7=false;
+            s7 = false;
             score--;
         }
     }
 
-    public void rb1Click(View v){
-        int rbi=rg[0].getCheckedRadioButtonId();
+    public void rb1Click(View v) {
+        int rbi = rg[0].getCheckedRadioButtonId();
         rb = findViewById(R.id.rb11);
-        if(rbi==rb.getId()){
+        if (rbi == rb.getId()) {
             score++;  //the answer is right if the checked radio id is the same with the one I know it's correct
-        }
-        else{
+        } else {
             score--;
         }
     }
 
-    public void rb2Click(View v){
-        int rbi=rg[1].getCheckedRadioButtonId();
+    public void rb2Click(View v) {
+        int rbi = rg[1].getCheckedRadioButtonId();
         rb = findViewById(R.id.rb21);
-        if(rbi==rb.getId()){
+        if (rbi == rb.getId()) {
             score++;
-        }
-        else{
+        } else {
             score--;
         }
     }
 
-    public void rb3Click(View v){
-        if(rg[2].getCheckedRadioButtonId()==R.id.rb33){
+    public void rb3Click(View v) {
+        if (rg[2].getCheckedRadioButtonId() == R.id.rb33) {
             score++;
-        }
-        else{
+        } else {
             score--;
         }
     }
 
-    public void rb4Click(View v){
-        if(rg[3].getCheckedRadioButtonId()==R.id.rb42){
+    public void rb4Click(View v) {
+        if (rg[3].getCheckedRadioButtonId() == R.id.rb42) {
             score++;
-        }
-        else{
+        } else {
             score--;
         }
     }
 
-    public void rb5Click(View v){
-        if(rg[4].getCheckedRadioButtonId()==R.id.rb54){
+    public void rb5Click(View v) {
+        if (rg[4].getCheckedRadioButtonId() == R.id.rb54) {
             score++;
-        }
-        else{
+        } else {
             score--;
         }
     }
 
-    public void rb6Click(View v){
-        if(rg[5].getCheckedRadioButtonId()==R.id.rb63){
+    public void rb6Click(View v) {
+        if (rg[5].getCheckedRadioButtonId() == R.id.rb63) {
             score++;
-        }
-        else{
+        } else {
             score--;
         }
     }
 
-    public void submit(View v){
-        if(score<0){
-            score=0;
+    public void submit(View v) {
+        if (score < 0) {
+            score = 0;
         }
-        if(score<=4){
-            Toast.makeText(getBaseContext(),"You should go learning with this score! (" + score + " (max=7))",Toast.LENGTH_SHORT).show();
-        }
-        if(score>=5){
-            Toast.makeText(getBaseContext(),"Congrats, your score is " + score + "(max=7)",Toast.LENGTH_SHORT).show();
-        }
+        Toast.makeText(getBaseContext(), "Congrats" + name + ": " + score + " out of 7!", Toast.LENGTH_LONG).show();
     }
 
 }

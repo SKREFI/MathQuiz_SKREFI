@@ -42,19 +42,22 @@
                     android:onClick="rb1Click"
                     android:text="@string/qa11" />
 
-                <RadioButton android:id="@+id/rb12"
+                <RadioButton
+                    android:id="@+id/rb12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="rb1Click"
                     android:text="@string/qa12" />
 
-                <RadioButton android:id="@+id/rb13"
+                <RadioButton
+                    android:id="@+id/rb13"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="rb1Click"
                     android:text="@string/qa13" />
 
-                <RadioButton android:id="@+id/rb14"
+                <RadioButton
+                    android:id="@+id/rb14"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="rb1Click"
@@ -76,25 +79,29 @@
                 android:layout_below="@id/question2"
                 android:paddingLeft="32dp">
 
-                <RadioButton android:id="@+id/rb21"
+                <RadioButton
+                    android:id="@+id/rb21"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="rb2Click"
                     android:text="@string/qa21" />
 
-                <RadioButton android:id="@+id/rb22"
+                <RadioButton
+                    android:id="@+id/rb22"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="rb2Click"
                     android:text="@string/qa22" />
 
-                <RadioButton android:id="@+id/rb23"
+                <RadioButton
+                    android:id="@+id/rb23"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="rb2Click"
                     android:text="@string/qa23" />
 
-                <RadioButton android:id="@+id/rb24"
+                <RadioButton
+                    android:id="@+id/rb24"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="rb2Click"
@@ -130,13 +137,15 @@
                     android:onClick="rb3Click"
                     android:text="@string/qa32" />
 
-                <RadioButton android:id="@+id/rb33"
+                <RadioButton
+                    android:id="@+id/rb33"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="rb3Click"
                     android:text="@string/qa33" />
 
-                <RadioButton android:id="@+id/rb34"
+                <RadioButton
+                    android:id="@+id/rb34"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="rb3Click"
@@ -157,25 +166,29 @@
                 android:layout_below="@id/question4"
                 android:paddingLeft="32dp">
 
-                <RadioButton android:id="@+id/rb41"
+                <RadioButton
+                    android:id="@+id/rb41"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="rb4Click"
                     android:text="@string/qa41" />
 
-                <RadioButton android:id="@+id/rb42"
+                <RadioButton
+                    android:id="@+id/rb42"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="rb4Click"
                     android:text="@string/qa42" />
 
-                <RadioButton android:id="@+id/rb43"
+                <RadioButton
+                    android:id="@+id/rb43"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="rb4Click"
                     android:text="@string/qa43" />
 
-                <RadioButton android:id="@+id/rb44"
+                <RadioButton
+                    android:id="@+id/rb44"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="rb4Click"
@@ -196,25 +209,29 @@
                 android:layout_below="@id/question5"
                 android:paddingLeft="32dp">
 
-                <RadioButton android:id="@+id/rb51"
+                <RadioButton
+                    android:id="@+id/rb51"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="rb5Click"
                     android:text="@string/qa51" />
 
-                <RadioButton android:id="@+id/rb52"
+                <RadioButton
+                    android:id="@+id/rb52"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="rb5Click"
                     android:text="@string/qa52" />
 
-                <RadioButton android:id="@+id/rb53"
+                <RadioButton
+                    android:id="@+id/rb53"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="rb5Click"
                     android:text="@string/qa53" />
 
-                <RadioButton android:id="@+id/rb54"
+                <RadioButton
+                    android:id="@+id/rb54"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="rb5Click"
@@ -235,25 +252,29 @@
                 android:layout_below="@id/question6"
                 android:paddingLeft="32dp">
 
-                <RadioButton android:id="@+id/rb61"
+                <RadioButton
+                    android:id="@+id/rb61"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="rb6Click"
                     android:text="@string/qa61" />
 
-                <RadioButton android:id="@+id/rb62"
+                <RadioButton
+                    android:id="@+id/rb62"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="rb6Click"
                     android:text="@string/qa62" />
 
-                <RadioButton android:id="@+id/rb63"
+                <RadioButton
+                    android:id="@+id/rb63"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="rb6Click"
                     android:text="@string/qa63" />
 
-                <RadioButton android:id="@+id/rb64"
+                <RadioButton
+                    android:id="@+id/rb64"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="rb6Click"
