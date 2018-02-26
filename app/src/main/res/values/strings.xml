@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Math Quiz</string>
+
+    <string name="question1">What is cos 45 equal to?</string>
+    <string name="qa11">sqrt {2}/2</string>
+    <string name="qa12">1/2</string>
+    <string name="qa13">sqrt {3}/4</string>
+    <string name="qa14">1</string>
+
+    <string name="question2">sin(a+b) = ?</string>
+    <string name="qa21">sin a * cos b + sin b * cos a</string>
+    <string name="qa22">sin a + sin b</string>
+    <string name="qa23">cos a * cos b + sin b * sin a</string>
+    <string name="qa24">1/2</string>
+
+    <string name="question3">sin a + sin b = ?</string>
+    <string name="qa31">sin(a+b)</string>
+    <string name="qa32">ctg a / tg b</string>
+    <string name="qa33">2 sin((a+b)/2) * cos ((a-b)/2)</string>
+    <string name="qa34">sin a + cos b / cos b + sin a</string>
+
+    <string name="question4">How much is ctg 90 ?</string>
+    <string name="qa41">sqrt{3}/2</string>
+    <string name="qa42">0</string>
+    <string name="qa43">1</string>
+    <string name="qa44">2/3</string>
+
+    <string name="question5">cos (a-b) = ?</string>
+    <string name="qa51">cos a - cos b</string>
+    <string name="qa52">cos^2 a - sin^2 b</string>
+    <string name="qa53">sin b / sin a</string>
+    <string name="qa54">cos a * cos b + sin a * sin b</string>
+
+    <string name="question6">How much is sin^2 x + cos^2 x ?</string>
+    <string name="qa61">sin x + cos x</string>
+    <string name="qa62">0</string>
+    <string name="qa63">1</string>
+    <string name="qa64">sin x * cos x * cos x * sin x</string>
+
+    <string name="question7">True/False: ctg(-x)=ctg(x)</string>
+
+    <string name="name_hint">Your name</string>
+
+
+</resources>
