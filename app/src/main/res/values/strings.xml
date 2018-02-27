@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Math Quiz</string>
 
+    <string name="yourName"></string>
+
     <string name="question1">What is cos 45 equal to?</string>
     <string name="qa11">sqrt {2}/2</string>
     <string name="qa12">1/2</string>
@@ -37,7 +39,11 @@
     <string name="qa63">1</string>
     <string name="qa64">sin x * cos x * cos x * sin x</string>
 
-    <string name="question7">True/False: ctg(-x)=ctg(x)</string>
+    <string name="question7">cos 2a = ?</string>
+    <string name="qa71">cos a + cos a</string>
+    <string name="qa72">cos^2 a - sin^2a</string>
+    <string name="qa73">2 cos^2 a -1</string>
+    <string name="qa74">1-2 sin^2 a</string>
 
     <string name="name_hint">Your name</string>
 

@@ -289,19 +289,45 @@
                 android:text="@string/question7" />
 
             <CheckBox
-                android:id="@+id/q7checkBox"
+                android:id="@+id/q7cb1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/question7"
                 android:layout_marginLeft="32dp"
-                android:onClick="question7clicked"
-                android:text="True/False" />
+                android:text="@string/qa71" />
+
+            <CheckBox
+                android:id="@+id/q7cb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q7cb1"
+                android:layout_marginLeft="32dp"
+                android:onClick="cb72"
+                android:text="@string/qa72" />
+
+            <CheckBox
+                android:id="@+id/q7cb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q7cb2"
+                android:layout_marginLeft="32dp"
+                android:onClick="cb73"
+                android:text="@string/qa73" />
+
+            <CheckBox
+                android:id="@+id/q7cb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q7cb3"
+                android:layout_marginLeft="32dp"
+                android:onClick="cb74"
+                android:text="@string/qa74" />
 
             <EditText
                 android:id="@+id/nameEdit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/q7checkBox"
+                android:layout_below="@id/q7cb4"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="32dp"
                 android:hint="@string/name_hint" />
