@@ -323,24 +323,29 @@
                 android:onClick="cb74"
                 android:text="@string/qa74" />
 
+            <TextView
+                style="@style/QuestionText"
+                android:id="@+id/question8"
+                android:layout_below="@id/q7cb4"
+                android:drawableLeft="@drawable/small_dot"
+                android:text="@string/question8"/>
+
             <EditText
                 android:id="@+id/nameEdit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/q7cb4"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="32dp"
-                android:hint="@string/name_hint" />
+                android:layout_below="@id/question8"
+                android:layout_marginStart="32dp"/>
 
             <Button
-                android:id="@+id/submbitButton"
+                android:id="@+id/submitButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/nameEdit"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="32dp"
                 android:onClick="submit"
-                android:text="Submbit" />
+                android:text="Submit" />
 
         </RelativeLayout>
 

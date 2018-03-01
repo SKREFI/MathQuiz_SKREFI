@@ -45,7 +45,6 @@
     <string name="qa73">2 cos^2 a -1</string>
     <string name="qa74">1-2 sin^2 a</string>
 
-    <string name="name_hint">Your name</string>
-
+    <string name="question8">cos 0 = ?</string>
 
 </resources>

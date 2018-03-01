@@ -10,17 +10,19 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    RadioGroup[] rg = new RadioGroup[6];
-    RadioButton rb;
-    boolean[] rbAnswered;
-    String name;
+    RadioGroup[] rg = new RadioGroup[6]; //declaration of the radio groups
+    RadioButton rb; //
+    boolean[] rbAnswered = new boolean[10]; //booleans keeping track of the state of the button
+    String answerQ8; //The answer string for the question 8 wich is a EditText question
     public int score = 0; //keep track of the score
+    EditText qET;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //All the radio groups
         rg[0] = findViewById(R.id.radioGroup1);
         rg[1] = findViewById(R.id.radioGroup2);
         rg[2] = findViewById(R.id.radioGroup3);
@@ -28,8 +30,7 @@ public class MainActivity extends AppCompatActivity {
         rg[4] = findViewById(R.id.radioGroup5);
         rg[5] = findViewById(R.id.radioGroup6);
 
-        EditText nameET = findViewById(R.id.nameEdit);
-        name = nameET.getText().toString();
+        qET = findViewById(R.id.nameEdit);
     }
 
     public void cb72(View view){
@@ -107,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
             score++;
             rbAnswered[3]=true;
         }
-        if (rg[2].getCheckedRadioButtonId() != R.id.rb42 && rbAnswered[3]) {
+        if (rg[3].getCheckedRadioButtonId() != R.id.rb42 && rbAnswered[3]) {
             score--;
             rbAnswered[3]=false;
         }
@@ -136,7 +137,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void submit(View v) {
-        Toast.makeText(getBaseContext(), "Congrats" + name + ": " + score + " out of 10!", Toast.LENGTH_LONG).show();
+        answerQ8 = qET.getText().toString();
+
+        if(answerQ8.equals("1") && !rbAnswered[9]){
+            score++;
+            rbAnswered[9]=true;
+        }
+        if(!answerQ8.equals("1") && rbAnswered[9]){
+            score--;
+            rbAnswered[9]=false;
+        }
+        Toast.makeText(getBaseContext(), "Congrats: " + score + " out of 10!", Toast.LENGTH_LONG).show();
     }
 
 }
