@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     RadioGroup[] rg = new RadioGroup[6];
     RadioButton rb;
-    Boolean[] rbAnswered = new Boolean[10];
+    boolean[] rbAnswered;
     String name;
     public int score = 0; //keep track of the score
 
@@ -69,8 +69,8 @@ public class MainActivity extends AppCompatActivity {
         int rbi = rg[0].getCheckedRadioButtonId();
         rb = findViewById(R.id.rb11);
         if (rbi == rb.getId() && !rbAnswered[0]) {
-                score++;
-                rbAnswered[0]=true;
+            score++;
+            rbAnswered[0]=true;
         }
         if(rbi != rb.getId() && rbAnswered[0]){
             score--;
